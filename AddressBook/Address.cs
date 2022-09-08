@@ -15,6 +15,7 @@ namespace AddressBook
         public Contacts person { get; private set; }
         public void Create()    //created an object of the contact class & add contact details
         {
+            person = new Contacts();
             Contacts contact = new Contacts();
             Console.WriteLine("Enter your first name");
             contact.first_name = Console.ReadLine();
@@ -37,7 +38,6 @@ namespace AddressBook
         public void Edit(String Fname, String Lname)    //edit details of existing contact
         {
             Contacts contact = new Contacts();
-            bool found = false;
             //foreach loop is a control flow statement for iterate items in a collection
             foreach (var person in add_book)
             {
@@ -107,6 +107,54 @@ namespace AddressBook
             {
                 Console.WriteLine("Contact not found");
             }
+        }
+
+        public void Choice(int ch)
+        {
+            int choice = ch;
+            if (choice == 5)
+            {
+                Address add = new Address();
+                do
+                {
+                    if (choice == 1)
+                    {
+                        add.Create();
+                    }
+                    if (choice == 2)
+                    {
+                        Console.WriteLine("Enter the first name");
+                        string Fname = Console.ReadLine();
+                        Console.WriteLine("Enter the last name");
+                        string Lname = Console.ReadLine();
+                        add.Edit(Fname, Lname);
+                    }
+                    if (choice == 3)
+                    {
+                        Console.WriteLine("Enter the first name");
+                        string Fname = Console.ReadLine();
+                        Console.WriteLine("Enter the last name");
+                        string Lname = Console.ReadLine();
+                        add.Delete(Fname, Lname);
+                    }
+                    if (choice == 4)
+                    {
+                        add.Display();
+                    }
+                    if (choice > 5)
+                    {
+                        Console.WriteLine("Exiting the program ");
+                    }
+                    //So that we check the user's choice again
+                    Console.WriteLine("1 : for adding contacts");
+                    Console.WriteLine("2 : for editing a contact");
+                    Console.WriteLine("3 : for deleting a contact ");
+                    Console.WriteLine("4 : for displaying list stored");
+                    Console.WriteLine("5 : exiting the program ");
+                    choice = Convert.ToInt16(Console.ReadLine());
+                } while (choice > 0 && choice < 5);
+            }
+            
         }
         public void Display()               //displaying details of each conatact
         {
