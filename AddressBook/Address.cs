@@ -109,12 +109,12 @@ namespace AddressBook
             }
         }
 
-        public void Choice(int ch)
+        public void Choice(int ch, Address add)
         {
             int choice = ch;
             if (choice == 5)
             {
-                Address add = new Address();
+                Contacts contact = new Contacts();
                 do
                 {
                     if (choice == 1)

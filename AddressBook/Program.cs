@@ -11,7 +11,7 @@
             Address add = new Address();
             while (flag)
             {
-                Console.WriteLine("Enter option: \n 1.Create \n 2.Add \n 3.Edit \n 4.Delete \n 5.Multiple");
+                Console.WriteLine("Enter option: \n 1.Create \n 2.Add \n 3.Edit \n 4.Delete \n 5.Multiple \n 6.Mul-AddressBooks");
                 Random random = new Random();
                 option = random.Next(0, 4);
                 option = Convert.ToInt32(Console.ReadLine());
@@ -54,7 +54,11 @@
                         Console.WriteLine("4 : for displaying the list stored");
                         Console.WriteLine("5 : exiting the program");
                         int choice = Convert.ToInt16(Console.ReadLine());
-                        add.Choice(choice);
+                        add.Choice(choice,add);
+                        break;
+                    case 6:
+                        MultipleBooks multipleBooks = new MultipleBooks();
+                        multipleBooks.Books();
                         break;
                 }
             }
