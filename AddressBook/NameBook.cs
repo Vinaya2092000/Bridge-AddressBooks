@@ -19,7 +19,7 @@ namespace AddressBook
         {
             Address[name] = add;
             add.Choice(1, add);
-            //Address.Add(name,obj1);
+            //Address.Add(name,add);
         }
         public bool search(string find)
         {
