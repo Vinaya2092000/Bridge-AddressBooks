@@ -1,0 +1,15 @@
+C:\Users\vinay\Documents\B-Practice\AddressBooks\AddressBook\bin\Debug\net6.0\AddressBook.exe
+C:\Users\vinay\Documents\B-Practice\AddressBooks\AddressBook\bin\Debug\net6.0\AddressBook.deps.json
+C:\Users\vinay\Documents\B-Practice\AddressBooks\AddressBook\bin\Debug\net6.0\AddressBook.runtimeconfig.json
+C:\Users\vinay\Documents\B-Practice\AddressBooks\AddressBook\bin\Debug\net6.0\AddressBook.dll
+C:\Users\vinay\Documents\B-Practice\AddressBooks\AddressBook\bin\Debug\net6.0\AddressBook.pdb
+C:\Users\vinay\Documents\B-Practice\AddressBooks\AddressBook\obj\Debug\net6.0\AddressBook.csproj.AssemblyReference.cache
+C:\Users\vinay\Documents\B-Practice\AddressBooks\AddressBook\obj\Debug\net6.0\AddressBook.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vinay\Documents\B-Practice\AddressBooks\AddressBook\obj\Debug\net6.0\AddressBook.AssemblyInfoInputs.cache
+C:\Users\vinay\Documents\B-Practice\AddressBooks\AddressBook\obj\Debug\net6.0\AddressBook.AssemblyInfo.cs
+C:\Users\vinay\Documents\B-Practice\AddressBooks\AddressBook\obj\Debug\net6.0\AddressBook.csproj.CoreCompileInputs.cache
+C:\Users\vinay\Documents\B-Practice\AddressBooks\AddressBook\obj\Debug\net6.0\AddressBook.dll
+C:\Users\vinay\Documents\B-Practice\AddressBooks\AddressBook\obj\Debug\net6.0\refint\AddressBook.dll
+C:\Users\vinay\Documents\B-Practice\AddressBooks\AddressBook\obj\Debug\net6.0\AddressBook.pdb
+C:\Users\vinay\Documents\B-Practice\AddressBooks\AddressBook\obj\Debug\net6.0\AddressBook.genruntimeconfig.cache
+C:\Users\vinay\Documents\B-Practice\AddressBooks\AddressBook\obj\Debug\net6.0\ref\AddressBook.dll
