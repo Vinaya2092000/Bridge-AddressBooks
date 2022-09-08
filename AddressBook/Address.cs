@@ -37,6 +37,7 @@ namespace AddressBook
         public void Edit(String Fname, String Lname)    //edit details of existing contact
         {
             Contacts contact = new Contacts();
+            bool found = false;
             //foreach loop is a control flow statement for iterate items in a collection
             foreach (var person in add_book)
             {
@@ -87,6 +88,25 @@ namespace AddressBook
                 }
             }
             Display();
+        }
+
+        public void Delete(String Fname, String Lname)  //deleting a contact
+        {
+            Contacts contact = new Contacts();
+            bool found = false;
+            foreach (var person in add_book)
+            {
+                if (person.first_name.Equals(Fname) && person.last_name.Equals(Lname))
+                {
+                    found = true;
+                    add_book.Remove(person);
+                    Console.WriteLine("Contact deleted");
+                }
+            }
+            if (found == false)
+            {
+                Console.WriteLine("Contact not found");
+            }
         }
         public void Display()               //displaying details of each conatact
         {

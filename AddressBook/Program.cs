@@ -11,9 +11,9 @@
             Address add = new Address();
             while (flag)
             {
-                Console.WriteLine("Enter option: \n 1.Create \n 2.Add \n 3.Edit");
+                Console.WriteLine("Enter option: \n 1.Create \n 2.Add \n 3.Edit \n 4.Delete");
                 Random random = new Random();
-                option = random.Next(0, 3);
+                option = random.Next(0, 4);
                 option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -40,6 +40,12 @@
                         add.Edit(firstName, lastName);
                         add.Display();
                         break;
+                    case 4:
+                        Console.WriteLine("Enter the first name of the contact to delete the details ");
+                        string firstName1 = Console.ReadLine();
+                        Console.WriteLine("Enter the second name of the contact to delete the details ");
+                        string lastName1 = Console.ReadLine();
+                        add.Delete(firstName1, lastName1);
                         break;
                 }
             }
