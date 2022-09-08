@@ -11,9 +11,9 @@
             Address add = new Address();
             while (flag)
             {
-                Console.WriteLine("Enter option: \n 1.Create \n 2.Add");
+                Console.WriteLine("Enter option: \n 1.Create \n 2.Add \n 3.Edit");
                 Random random = new Random();
-                option = random.Next(0, 2);
+                option = random.Next(0, 3);
                 option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -31,6 +31,15 @@
                         }
                         Console.WriteLine("These contacts are stored");
                         add.Display();
+                        break;
+                    case 3:
+                        Console.WriteLine("enter first name: ");
+                        string firstName = Console.ReadLine();
+                        Console.WriteLine("enter last name: ");
+                        string lastName = Console.ReadLine();
+                        add.Edit(firstName, lastName);
+                        add.Display();
+                        break;
                         break;
                 }
             }
